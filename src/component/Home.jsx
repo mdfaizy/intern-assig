@@ -5,7 +5,7 @@ import CheckBoxSection from './pages/CheckBoxSection';
 import Group6 from '../assets/Group-6.png'
 import Group51 from '../assets/Group51.png'
 import { FaLongArrowAltRight } from "react-icons/fa";
-import image17 from "../assets/image17.png"
+import image17 from "../assets/Image17.png"
 import image14 from "../assets/Image14.png"
 import Rectangle03 from '../assets/Rectangle03.png'
 import Rectangle02 from '../assets/Rectangle2.png'
