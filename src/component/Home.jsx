@@ -4,7 +4,7 @@ import { MdArrowRightAlt } from "react-icons/md";
 import CheckBoxSection from './pages/CheckBoxSection';
 import Group6 from '../assets/Group-6.png'
 import Group51 from '../assets/Group51.png'
-
+import { FaLongArrowAltRight } from "react-icons/fa";
 import image17 from "../assets/image17.png"
 import image14 from "../assets/image14.png"
 import Rectangle03 from '../assets/Rectangle03.png'
@@ -17,11 +17,13 @@ import secondImg from '../assets/02.png'
 import thirdImg from '../assets/03.png'
 import forthImg from '../assets/04.png'
 import fifthImg from '../assets/05.png'
+import DateIcon from '../assets/date.png'
+import Hero from '../assets/hero.jpeg'
 const Home = () => {
     return (
         <div className="max-w-[1600px] mx-auto min-h-screen">
             {/* Hero section top */}
-            <div className="max-w-[1600px] mx-auto px-4 sm:px-8 py-10">
+            {/* <div className="max-w-[1600px] mx-auto px-4 sm:px-8 py-10">
                 <div>
                     <h1 className="text-4xl font-bold mb-4 text-[#487C9A]">Visa Made Easy</h1>
                     <p className="text-xl mb-6 text-gray-700">Dreams Made Possible</p>
@@ -32,9 +34,40 @@ const Home = () => {
                     </button>
                 </div>
                 <CheckBoxSection />
-            </div>
+            </div> */}
+
+  {/* <div className="max-w-[1600px] mx-auto px-4 sm:px-8  h-80 py-10 bg-cover bg-center" style={{ backgroundImage: `url(${Hero})` }}>
+
+    <div>
+        <h1 className="text-4xl font-bold mb-4 text-[#487C9A]">Visa Made Easy</h1>
+        <p className="text-xl mb-6 text-gray-700">Dreams Made Possible</p>
+
+        <button className="px-4 py-3 bg-[#FFC310] text-black rounded-2xl font-semibold shadow hover:bg-yellow-400 transition flex items-center">
+            Enquire Now
+            <MdArrowRightAlt className="ml-2 text-xl" />
+        </button>
+    </div>
+    <CheckBoxSection />
+</div> */}
+
+<div className="max-w-[1600px] mx-auto px-4 sm:px-8 py-10 bg-cover bg-center h-[400px]" style={{ backgroundImage: `url(${Hero})` }}>
+    <div>
+        <h1 className="text-4xl font-bold mb-4 text-[#487C9A]">Visa Made Easy</h1>
+        <p className="text-xl mb-6 text-gray-700">Dreams Made Possible</p>
+
+        <button className="px-4 py-3 bg-[#FFC310] text-black rounded-2xl font-semibold shadow hover:bg-yellow-400 transition flex items-center">
+            Enquire Now
+            <MdArrowRightAlt className="ml-2 text-xl" />
+        </button>
+    </div>
+    <CheckBoxSection />
+</div>
+
+
             
-            <VisaSection />
+            <div className='mt-96'>
+                <VisaSection />
+            </div>
            
             <div className="max-w-[1600px] mx-auto px-4 sm:px-8 py-10">
                 <WhyChooseUs />
@@ -234,70 +267,76 @@ const Home = () => {
             </div>
 
 
-            <div className="w-full py-12 px-6 md:px-12 lg:px-20">
-                <div className="flex items-center gap-4 mb-8 w-full max-w-2xl">
-                    <div className="flex items-center justify-center w-10 h-10 bg-[#487C9A] rounded-full">
-                        <img src={Frame} alt="Icon" className="w-6 h-6" />
-                    </div>
-                    <p className="text-[#487C9A] text-xl font-semibold tracking-wide">
-                        Recent Blogs
-                    </p>
-                </div>
+            <div className="py-12 px-6 md:px-12 lg:px-20">
+    <div className="flex items-center gap-4 mb-8 w-full max-w-2xl">
+        <div className="flex items-center justify-center w-10 h-10 bg-[#487C9A] rounded-full">
+            <img src={Frame} alt="Icon" className="w-6 h-6" />
+        </div>
+        <p className="text-[#487C9A] text-xl font-semibold tracking-wide">
+            Recent Blogs
+        </p>
+    </div>
 
-                <h1 className="text-3xl font-extrabold text-gray-900 mb-6">
-                    Journeys of Discovery Uncovering Hidden
-                </h1>
+    <h1 className="text-3xl font-extrabold text-gray-900 mb-6">
+        Journeys of Discovery Uncovering Hidden
+    </h1>
 
-                <div className="flex flex-wrap gap-8 justify-center">
-                    {/* Card 1 */}
-                    <div className="max-w-xs w-full bg-white p-6 rounded-lg shadow-lg">
-                        <div className="relative">
-                            <img src={Rectangle02} alt="Landscape" className="w-full h-[200px] object-cover rounded-md" />
-                            <span className="absolute bottom-2 left-4 text-white bg-black px-2 py-1 text-sm rounded-full">
-                                October 19, 2022
-                            </span>
-                        </div>
-                        <h1 className="text-xl font-semibold text-gray-900 mt-4">World of Wander: Discovering Diverse Landscapes</h1>
-                        <p className="text-gray-600 mt-2">Lorem Ipsum is simply dummy text used in the printing industry.</p>
-                        <button className="mt-4 bg-blue-500 text-white px-6 py-2 rounded-full hover:bg-blue-600 transition">
-                            Read More
-                        </button>
-                    </div>
-
-                    {/* Card 2 */}
-                    <div className="max-w-xs w-full bg-white p-6 rounded-lg shadow-lg">
-                        <div className="relative">
-                            <img src={Rectangle03} alt="Landscape" className="w-full h-[200px] object-cover rounded-md" />
-                            <span className="absolute bottom-2 left-4 text-white bg-black px-2 py-1 text-sm rounded-full">
-                                October 19, 2022
-                            </span>
-                        </div>
-                        <h1 className="text-xl font-semibold text-gray-900 mt-4">World of Wander: Discovering Diverse Landscapes</h1>
-                        <p className="text-gray-600 mt-2">Lorem Ipsum is simply dummy text used in the printing industry.</p>
-                        <button className="mt-4 bg-blue-500 text-white px-6 py-2 rounded-full hover:bg-blue-600 transition">
-                            Read More
-                        </button>
-                    </div>
-
-                    {/* Card 3 */}
-                    <div className="max-w-xs w-full bg-white p-6 rounded-lg shadow-lg">
-                        <div className="relative">
-                            <img src={Rectangle01} alt="Landscape" className="w-full h-[200px] object-cover rounded-md" />
-                            <div className='flex'>
-                                <span className="absolute bottom-2 left-4 text-white bg-black px-2 py-1 text-sm rounded-full">
-                                    October 19, 2022
-                                </span>
-                                <span>By admin</span>
-                            </div>
-                        </div>
-                        <h1 className="text-xl font-semibold text-gray-900 mt-4">World of Wander: Discovering Diverse Landscapes</h1>
-                        <p className="text-gray-600 mt-2">Lorem Ipsum is simply dummy text used in the printing industry.</p>
-                        <button className="mt-4 bg-blue-500 text-white px-6 py-2 rounded-full hover:bg-blue-600 transition">
-                            Read More
-                        </button>
-                    </div>
+    <div className="flex flex-wrap gap-8 justify-between w-full mx-auto">
+        {/* Card 1 */}
+        <div className="w-full md:w-1/3 lg:w-[350px] bg-white p-6 rounded-lg">
+            <div className="">
+                <img src={Rectangle02} alt="Landscape" className="w-full h-[200px] object-cover rounded-md" />
+                <div className='flex justify-between mt-2'>
+                    <span className="bottom-2 px-2 py-1 text-sm text-gray-400 flex gap-2 justify-center items-center">
+                        <img src={DateIcon} alt="" className='h-2 w-2'/>October 19, 2022
+                    </span>
+                    <span className='text-sm text-gray-400'>By admin</span>
                 </div>
             </div>
+            <h1 className="text-xl font-semibold text-gray-900 mt-4">World of Wander: Discovering Diverse Landscapes</h1>
+            <p className="text-gray-600 mt-2">Lorem Ipsum is simply dummy text used in the printing industry.</p>
+            <button className="mt-4 text-[#3790AE] justify-center items-center flex">
+                Read More <FaLongArrowAltRight className='ml-2 text-[#3790AE]'/>
+            </button>
+        </div>
+
+        {/* Card 2 */}
+        <div className="w-full md:w-1/3 lg:w-[350px] bg-white p-6 rounded-lg shadow-lg">
+            <div className="">
+                <img src={Rectangle03} alt="" className="w-full h-[200px] object-cover rounded-md" />
+                <div className='flex justify-between mt-2'>
+                    <span className="bottom-2 px-2 py-1 text-sm text-gray-400 flex gap-2 justify-center items-center">
+                        <img src={DateIcon} alt="" className='h-2 w-2'/>October 19, 2022
+                    </span>
+                    <span className='text-sm text-gray-400'>By admin</span>
+                </div>
+            </div>
+            <h1 className="text-xl font-semibold text-gray-900 mt-4">World of Wander: Discovering Diverse Landscapes</h1>
+            <p className="text-gray-600 mt-2">Lorem Ipsum is simply dummy text the printing and typese Lorem Ipsum.</p>
+            <button className="mt-4 text-[#3790AE] justify-center items-center flex">
+                Read More <FaLongArrowAltRight className='ml-2 text-[#3790AE]'/>
+            </button>
+        </div>
+
+        {/* Card 3 */}
+        <div className="w-full md:w-1/3 lg:w-[350px] bg-white p-6 rounded-lg shadow-lg">
+            <div className="">
+                <img src={Rectangle01} alt="" className="w-full h-[200px] object-cover rounded-md" />
+                <div className='flex justify-between mt-2'>
+                    <span className="bottom-2 px-2 py-1 text-sm text-gray-400 flex gap-2 justify-center items-center">
+                        <img src={DateIcon} alt="" className='h-2 w-2'/>October 19, 2022
+                    </span>
+                    <span className='text-sm text-gray-400'>By admin</span>
+                </div>
+            </div>
+            <h1 className="text-xl font-semibold text-gray-900 mt-4">World of Wander: Discovering Diverse Landscapes</h1>
+            <p className="text-gray-600 mt-2">Lorem Ipsum is simply dummy text used in the printing industry.</p>
+            <button className="mt-4 text-[#3790AE] justify-center items-center flex">
+                Read More <FaLongArrowAltRight className='ml-2 text-[#3790AE]'/>
+            </button>
+        </div>
+    </div>
+</div>
 
         </div>
     );

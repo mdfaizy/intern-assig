@@ -51,14 +51,14 @@ const CheckBoxSection = () => {
   ];
 
   return (
-    <section className="bg-[#F9FAFB] py-16">
+    <section className=" py-16">
       <div className="max-w-[1600px] mx-auto flex flex-wrap gap-8 justify-center px-6">
         {cardData.map((item, index) => (
           <div
             key={index} className="w-[390px] min-h-[230px] bg-white border border-gray-200 rounded-xl shadow-sm hover:shadow-lg transition-all duration-200 flex flex-col justify-between">
 
             <h2 className="text-lg font-semibold px-2 mt-2 text-[#487C9A]">{item.title}</h2>
-            <hr className="-mb-4 border-[#197B7D] px-4" />
+            <hr className="-mb-4 border-[#197B7D] px-8 w-full mx-auto" />
 
             <p className="text-sm text-gray-700 mb-4 px-2 leading-relaxed">{item.desc}</p>
 
